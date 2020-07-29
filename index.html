@@ -3,11 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap link for layout-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- my style sheet for looks-->
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- title of the page-->
   <title>Coding Quiz</title>
 </head>
+
 <body>
-    
+
+  <main class="container">
+    <!-- section is visible when you are about to play the quiz-->
+    <section id="welcome">
+      <h2>Welcome to the Coding Quiz!</h2>
+      <p>This is a timed quiz. When you click the button the timer will start and the quiz will begin. Whenever you get a question wrong, time will be subtracted from the clock. When you either finish the quiz, or you run out of time, you will get your score and be able to save it to the scoreboard.</p>
+      <button class="start-quiz">Start Quiz</button>
+      <button class="go-to-list" src="./highscores.html">High Scores</button>
+    </section>
+
+    <!-- section is visible when you're playing the quiz -->
+    <section id="play-quiz" class="hide">
+      <!-- this is a bar along the top maybe-->
+      <div class="row">
+        <!-- this is the progress tracker-->
+        <div class="col" id="progress">
+          <h3 id="completed">0</h3>
+          <h3>/8</h3>>
+        </div>
+        <!-- this is the timer-->
+        <div class="col" id="timer">
+          <h3 id="minutes">4</h3>
+          <h3>:</h3>
+          <h3 is="seconds">00</h3>
+        </div>
+      </div>
+      <!-- this is the actual quiz that they interact with-->
+      <!-- most of it is dynamic and will therefore be in the JavaScript-->
+      <div class="row">
+        <h2 id="ques-title"></h2>
+        <div id="ques-choices"></div>
+      </div>
+    </section>
+  </main>
+  
   <script src="./assets/js/logic.js"></script>
   <script src="./assets/js/questions.js"></script>
 </body>

@@ -1,48 +1,27 @@
+
 const questions = [
-  { title: 'What does "NaN" stand for?',
-  choices: ["not a number", "Batman", "my Nana", "it's that bread you eat with curry"],
-  answer: "not a number"
-  },
-  { title: 'What is the most likely reason someone might use "console.log()"?',
-  choices: ["practice user snippets", "check the result of something they otherwise wouldn't be able to see", "secret spy messages"],
-  answer: "check the result of something they otherwise wouldn't be able to see"
-  },
-  { title: 'Where do you start counting when programming?',
-  choices: ["1", "0"],
-  answer: "0"
-  },
-  { title: 'What is a "Serif" font and where is it best for reading?',
-  choices: ["A Serif font has no extra little lines, and is best for screen reading",
-    "A Serif font has extra little lines, and is best for screen reading",
-    "A Serif font has no extra little lines, and is best for printed materials",
-    "A Serif font has extra little lines, and is best for printed materials"],
-  answer: "A Serif font has extra little lines, and is best for printed materials"
-  },
-  { title: 'What are the most common grid sizes for websites?',
-  choices: ["6 and 12", "9", "6 and 24", "12 and 24"],
-  answer: "12 and 24"
-  },
-  { title: 'When should you use capital letters vs. dashes?',
-  choices: ["capitals in HTML and dashes in HTML",
-  "capitals in JS and dashes in JS",
-  "capitals in HTML and dashes in JS",
-  "capitals in JS and dashes in HTML"],
-  answer: "capitals in JS and dashes in HTML"
-  },
-  { title: 'How do you say one value is the same as something else in JavaScript?',
-  choices: ["=", "==", "==="],
-  answer: "==="
-  },
-  { title: 'What does ".querySelector" do?',
-  choices: ["Goes and finds the value that has...", "Goes and gets this Id", "Goes and get all of the values so you can pick the one you want"],
-  answer: "Goes and finds the value that has..."
-  },
-  { title: 'What is jQuery?',
-  choices: ["it is an alternative to JavaScript", "it is a JavaScrip Library"],
-  answer: "it is a JavaScrip Library"
-  },
-  { title: 'How would you reference to a cousin Node?',
-  choices: ["Node.cousinNode", "Node.cousin", "cousinNode", "cousin Nodes aren't a thing"],
-  answer: "cousin Nodes aren't a thing"
-  },
+  { QuesTitle: 'What does "NaN" stand for?',
+  QuesChoices ['my Nana', 'Batman', 'Not a Number', 'its the bead you eat with curry'],
+  answer: 'Not a Number' },
+  { QuesTitle: 'What is the most likely reason someone might use "console.log()"?',
+  QuesChoices ['practice making snippets', "check the current state of something they otherwise couldn't see", 'secret spy messages'],
+  answer: "check the current state of something they otherwise couldn't see" },
+  { QuesTitle: 'Where do you start counting when programming?',
+  QuesChoices ['1', '0'],
+  answer: '0' },
+  { QuesTitle: 'When should you use capital letters or dashes?',
+  QuesChoices ['you use capital letters in all languages', 'you use dashes in all languages', 'you use capital letters in HTML and dashes in JavaScript', 'you use capital letters in JavaScript and dashes in HTML'],
+  answer: 'you use capital letters in JavaScript and dashes in HTML' },
+  { QuesTitle: 'How do you say one value is the same as another in JavaScript?',
+  QuesChoices ['=', '==', '==='],
+  answer: '===' },
+  { QuesTitle: 'What does ".querySelector" do?',
+  QuesChoices ['goes and finds the value that has...', 'goes and gets this ID', 'goes and gets all the values so you can pick the ones you want'],
+  answer: 'goes and finds the value that has...' },
+  { QuesTitle: 'How would you reference a cousin Node?',
+  QuesChoices ['Node.cousinNode', 'Node.cousin', 'cousinNode', "cousin Nodes aren't a thing"],
+  answer: "cousin Nodes aren't a thing" },
+  { QuesTitle: 'What is jQuery?',
+  QuesChoices ['an alternative to JavaScript', 'a JavaScript library'],
+  answer: 'a JavaScript library' },
 ];

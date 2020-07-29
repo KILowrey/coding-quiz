@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap link for layout-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- my style sheet for looks-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- title of the page-->
+  <title>High Scores</title>
+</head>
+<body>
+    
+  <main class="container">
+    <!-- player enters their score-->
+    <section id="player-submit">
+      <h2 id="score"></h2>
+      <input type="text" id="name" placeholder="you initials">
+      <button type="submit">Submit</button>
+    </section>
+
+    <!-- high score list-->
+    <section id="score-page">
+      <h2>High Scores!</h2>
+      <ul id="scores-list">
+        <!-- code for the high scores found in scores.js-->
+      </ul>
+      <button class="start-quiz" src="./index.html">Retry</button>
+    </section>
+  </main>
+
+  <script src="./assets/js/logic.js"></script>
+</body>
+</html>

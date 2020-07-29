@@ -1,8 +1,34 @@
 # coding-quiz
-Week 4 - Web APIs - Bootcamp Homework
+## Week 4 - Web APIs - Bootcamp Homework
+---
 
+## Description
 
+Description of project
 
+## Usage
+
+instructions and screenshot here
+
+## Credits
+
+Made while referencing the code of:
+ * [Nancy Lambert-Brown](https://github.com/n-lambert)
+ * [Plover Brown](https://github.com/rebgrasshopper)
+
+Timer code derived from [Tomato Timer class activity](https://ucsd.bootcampcontent.com/UCSD-Coding-Bootcamp/ucsd-sd-fsf-pt-06-2020-u-c/tree/master/04-Web-APIs/01-Activities/29-Stu_Timer-App)
+
+Instructions from © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+## License
+
+GNU GENERAL PUBLIC LICENSE Version 3
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+---
+---
+---
 
 Instructions ft. Chris' annotations
 # 04 Web APIs: Code Quiz
