@@ -11,12 +11,25 @@ let secondsElapsed = 0;
 let currentQuesIndex = 0;
 let correctQuesIndex = 0;
 
+// buttons for navigation
+const startBtn = document.querySelector(".start-quiz");
 
+// page sections
+const welcomeSec = document.getElementById("welcome");
+const playQuizSec = document.getElementById("play-quiz");
+
+startBtn.addEventListener("click", function() {
+  welcomeSec.innerHTML = "";
+  playQuizSec.classList.remove("d-none");
+  getQuestion();
+  runTimer();
+});
 
 // get questions
 function getQuestion() {
+  console.log("getQuestion is running");
   // get the first question
-  let currentQuestion = questions[currentQuestionIndex];
+  let currentQuestion = questions[currentQuesIndex];
   // update ques-title to QuesTitle
   let quesTitleEl = document.querySelector('#ques-title');
   quesTitleEl.textContent = currentQuestion.QuesTitle;
@@ -37,7 +50,7 @@ function getQuestion() {
 // check answer
 function choiceClick() {
   // check if wrong
-  if (this.value === questions[currentQuestionIndex].answer) {
+  if (this.value === questions[currentQuesIndex].answer) {
     correctQuesIndex++;
   } else {
     secondsElapsed = (secondsElapsed + 30);
